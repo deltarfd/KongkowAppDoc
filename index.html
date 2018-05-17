@@ -615,10 +615,19 @@
                           <li style="font-weight: 400;"><span style="font-weight: 400;">Observasi : mengamati kebiasaan anak muda yang suka nongkrong.</span></li>
                           <li style="font-weight: 400;"><span style="font-weight: 400;">Interview : mewawancarai anak muda yang sering nongkrong dan bagaimana cara mereka mengajak temannya untuk nongkrong yang akan kami jadikan fitur untuk mempermudah user</span></li>
                           </ul><br>
-                          <ol>
                             <p><span style="font-weight: 400;">Relasi antar data :</span></p>
                             <img class="img-fluid d-block mx-auto" src="img/RelasiData.png" alt="Relasi Antar Data">
                             </ol>
+
+                            <p>Penjelasan Untuk relasi :</p>
+                          <ol>
+                          <li><strong>(user_punya_interest)</strong> setiap user bisa memiliki banyak interest, interest pun bisa dimiliki oleh banyak user.</li>
+                          <li><strong>(user_punya_message)</strong> setiap user yang memiliki message akan dicatat di database, setiap user bisa memiliki banyak pesan, setiap pesan maksimal dimiliki oleh 2 user, yaitu receiver dan sender</li>
+                          <li><strong>(user_punya_appointment)</strong> setiap user bisa membuat banyak appointment.</li>
+                          <li><strong>(user_submit_appointment) </strong> setiap user bisa mensubmit banyak appointment, dan setiap appointment bisa disubmit oleh banyak user</li>
+                          <li><strong>(appointment_punya_tempat)</strong> setiap tempat bisa memiliki banyak appointment, namun satu appointment harus memiliki satu tempat</li>
+                          <li></li>
+                          </ol><br>
 
                       </div>
                     </div>
