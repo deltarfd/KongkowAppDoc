@@ -630,33 +630,59 @@
 
                           <p>Penjelasan Untuk Atribut pada setiap Entity :</p>
                           <ol>
-                            <li>Atribut pada entity User
+                            <li>Atribut pada entity <strong>User</strong>
                               <ul>
-                                <li></li>
+                                <li><strong>id_user</strong> dan <strong>nama</strong> dibutuhkan sebagai identitas dari user</li>
+                                <li><strong>gender</strong> dan <strong>tanggal lahir</strong> dibutuhkan dalam proses pencarian appointment</li>
+                                <li><strong>status</strong> dibutuhkan untuk user membuat deskripsi singkat tentang dirinya</li>
                               </ul>
                             </li>
 
-                            <li>Atribut pada entity Interest
+                            <li>Atribut pada entity <strong>Interest</strong>
                               <ul>
-                                <li></li>
+                                <li><strong>id_interest</strong> dan <strong>nama interest</strong> dibutuhkan sebagai identitas dari interest</li>
                               </ul>
                             </li>
 
-                            <li>Atribut pada entity Message
+                            <li>Atribut pada entity <strong>Message</strong>
                               <ul>
-                                <li></li>
+                                <li><strong>id_mess</strong> dan <strong>tanggal dan waktu</strong> dibutuhkan sebagai identitas message</li>
+                                <li><strong>message</strong> dibutuhkan untuk menyimpan isi pesan</li>
+                                <li><strong>id_receiver</strong> dan <strong>id_sender</strong> dibutuhkan sebagai identitas pengirim dan penerima pesan</li>
                               </ul>
                             </li>
 
-                            <li>Atribut pada entity Tempat
+                            <li>Atribut pada entity <strong>Tempat</strong>
                               <ul>
-                                <li></li>
+                                <li><strong>id_tempat</strong> dan <strong>id_tempat</strong> sebagai identitas dari entity tempat</li>
+                                <li><strong>Alamat</strong> dan <strong>koordinat google maps</strong> dibutuhkan untuk menunjukan lokasi dari tempat tersebut</li>
                               </ul>
                             </li>
 
-                            <li>Atribut pada entity Appointment
+                            <li>Atribut pada entity <strong>Appointment</strong>
                               <ul>
-                                <li></li>
+                                <li><strong>id_app</strong> dibutuhkan sebagai identitas appointment</li>
+                                <li><strong>id_tempat</strong>dibutuhkan sebagai identitas tempat dari appointment yang telah dibuat</li>
+                                <li><strong>tanggal dan waktu</strong> dibutuhkan untuk penjelasan waktu appointment</li>
+                                <li><strong>deskripsi</strong> dibutuhkan untuk menyimpan penjelasan tentang appointment oleh pembuat appointment</li>
+                              </ul>
+                            </li>
+
+                            <li>Atribut pada entity <strong>user_punya_interest</strong>
+                              <ul>
+                                <li><strong>id_interest</strong> dan <strong>id_user</strong> dibutuhkan untuk mengetahui siapa saja yang interest ke mana saja</li>
+                              </ul>
+                            </li>
+
+                            <li>Atribut pada entity <strong>user_punya_message</strong>
+                              <ul>
+                                <li><strong>id_user</strong> dan <strong>id_mess</strong> dibutuhkan untuk mengetahui user mana saja yang berhubungan dengan message yang bersangkutan</li>
+                              </ul>
+                            </li>
+
+                            <li>Atribut pada entity <strong>user_submit_appointment</strong>
+                              <ul>
+                                <li><strong>id_app</strong> dan <strong>id_user</strong> dibutuhkan untuk mengetahui user mana saja yang mensubmit sebuah appointment dan appointment mana saja yang disubmit oleh seorang user</li>
                               </ul>
                             </li>
 
@@ -677,29 +703,30 @@
                       <div class="card-body">
                           <ol>
                             <li>Lingkungan Fisik</li>
-                            </ol>
-                            <ul>
+                          </ol>
+                          <ul>
                             <li>Tempat akses : Proses pencarian teman melalui aplikasi dapat dilakukan dimana saja.</li>
                             <li>Tingkat pencahayaan : Karena user dapat menggunakan aplikasi dimana saja, maka tingkat pencahayaannya diperhatikan. Untuk implikasinya yaitu penggunaan latar dan font-nya disesuaikan dengan kebutuhan dan kondisi lingkungan user.</li>
                             <li>Sikap badan user saat mengakses aplikasi : User dapat menggunakan aplikasi pada saat posisi duduk, berdiri ataupun tiduran.</li>
                             <li>Ketersediaan sumber energi : Karena aplikasi dibuat berbasis mobile, maka user diharuskan memiliki baterai yang cukup untuk dapat menghidupkan smartphone-nya</li>
-                            </ul>
-                            <ol start="2">
+                          </ul>
+                          <ol start="2">
                             <li>Lingkungan Teknis</li>
-                            </ol>
-                            <ul>
+                          </ol>
+                          <ul>
                             <li>Sistem yang akan dirancang menggunakan platform mobile. Hal ini dibuat karena target end user aplikasi pencarian teman hangout adalah remaja. Remaja biasanya menginginkan aplikasi yang simpel, praktis dan dapat diakses dimana saja dan kapan saja. Mobile adalah pilihan yang tepat karena dilihat dari kebiasaan anak remaja masa kini yang tidak bisa terlepas dari smartphone. Untuk mengakses aplikasi, user tinggal menekan icon aplikasi Kongkow App yang sudah ada di layar smartphone mereka. Agar user dapat menggunakan sistem ini dimana saja dan kapan saja.</li>
                             <li>Jaringan : Untuk melakukan pencarian teman hangout, user harus tersambung dengan internet.</li>
-                            </ul>
-                            <ol start="3">
+                          </ul>
+                          <ol start="3">
                             <li>Lingkungan Sosial</li>
-                            </ol>
-                            <ul>
+                          </ol>
+                          <ul>
                             <li>User dapat berinteraksi dengan sistem yaitu user memberikan inputan yang dibutuhkan seperti membuat akun baru dan mencari teman hangout/kongkow. Sehingga sistemdapat mengeluarkan output berupa akun bari bagi user serta list teman yang dicari oleh user.</li>
                             <li>User dapat berinteraksi dengan satu atau lebih user lain dengan menggunakan fitur chat/message.</li>
                             <li>User dapat mengirimkan saran atau kritikan untuk pengembangan sistem kedepannya.</li>
                             <li>User dapat mengirimkan informasi jika ada masalah atau gangguan ke pihak Kongkow App melalui email.</li>
                             <li>User yang sudah memiliki akun dapat mengatur privasi identitas dirinya dengan menampilkan nya ke public atau tidak.</li>
+                          </ul>
                       </div>
                     </div>
                   </div>
