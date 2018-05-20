@@ -1223,10 +1223,10 @@
                           <p class="c2"><span class="c1">Physical data Model</span></p>
                           <p class="c2"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 656.00px;"><img alt="" src="images/concep.png" style="width: 624.00px; height: 656.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
 
-                        <h3>Skenario Pencarian Teman 1</h3>
+                        <h3>Skenario Pencarian Teman Berdasarkan Reference</h3>
                         <h5><strong>Pre-condition : User telah terdaftar dan telah mengisi atribut profile</strong></h5>
                         <h5><strong>Post-condition : User mendapatkan teman, dan jadwal untuk kongkow</strong></h5>
-                        <table class="tg">
+                        <table class="table table-bordered table-striped">
                               <tr>
                                 <th class="tg-amwm">No</th>
                                 <th class="tg-amwm">User</th>
@@ -1235,63 +1235,118 @@
                               </tr>
                               <tr>
                                 <td class="tg-yw4l">1</td>
-                                <td class="tg-yw4l">User membuka aplikasi</td>
+                                <td class="tg-yw4l">User menekan tab pencarian teman</td>
                                 <td class="tg-yw4l">2</td>
-                                <td class="tg-yw4l">SIstem menmapilkan tampilan daftar appointment yang tersedia</td>
+                                <td class="tg-yw4l">Sistem menampilkan list appointment yang tersedia</td>
                               </tr>
                               <tr>
                                 <td class="tg-yw4l">3</td>
-                                <td class="tg-yw4l">User memilih appointment untuk di submit, yang berarti user ingin kongkow dengan orang yang memiliki appointment tersebut</td>
+                                <td class="tg-yw4l">User menekan tombol filter</td>
                                 <td class="tg-yw4l">4</td>
-                                <td class="tg-yw4l">Sistem mengirimkan permintaan kongkow dari user ke pemilik appointment</td>
-                              </tr>
-                              <tr>
-                                <td class="tg-yw4l"></td>
-                                <td class="tg-yw4l"></td>
-                                <td class="tg-yw4l">5</td>
-                                <td class="tg-yw4l">Jika pemilik appointment menerima permintaan user, sistem akan membuat appointment yang sama di my appointment milik user yang men submit</td>
-                              </tr>
-                        </table>
-
-                        <h3>Skenario Pencarian Teman 2</h3>
-                        <h5><strong>Pre-condition : User telah terdaftar dan telah mengisi atribut profile</strong></h5>
-                        <h5><strong>Post-condition : User mendapatkan teman, dan jadwal untuk kongkow</strong></h5>
-                        <table class="tg">
-                              <tr>
-                                <th class="tg-amwm">No</th>
-                                <th class="tg-amwm">User</th>
-                                <th class="tg-amwm">No</th>
-                                <th class="tg-amwm">Sistem</th>
-                              </tr>
-                              <tr>
-                                <td class="tg-yw4l">1</td>
-                                <td class="tg-yw4l">User membuka aplikasi</td>
-                                <td class="tg-yw4l">2</td>
-                                <td class="tg-yw4l">SIstem menmapilkan tampilan daftar appointment yang tersedia</td>
-                              </tr>
-                              <tr>
-                                <td class="tg-yw4l">3</td>
-                                <td class="tg-yw4l">User menekan tombol my appointment</td>
-                                <td class="tg-yw4l">4</td>
-                                <td class="tg-yw4l">Sistem menampilkan my appointment</td>
+                                <td class="tg-yw4l">Sistem menampilkan opsi pemfilteran</td>
                               </tr>
                               <tr>
                                 <td class="tg-yw4l">5</td>
-                                <td class="tg-yw4l">User membuat appointment, dengan menentukan tempat, waktu, tanggal, dan deskripsi appointment</td>
+                                <td class="tg-yw4l">User menentukan filter sesuai keinginan</td>
+                                <td class="tg-yw4l"></td>
+                                <td class="tg-yw4l"></td>
+                              </tr>
+                              <tr>
                                 <td class="tg-yw4l">6</td>
-                                <td class="tg-yw4l">Sistem akan mempublikasikan appointment yang telah dibuat,</td>
-                              </tr>
-                              <tr>
-                                <td class="tg-yw4l"></td>
-                                <td class="tg-yw4l"></td>
+                                <td class="tg-yw4l">User Menekan tombol checklist</td>
                                 <td class="tg-yw4l">7</td>
-                                <td class="tg-yw4l"> jika ada user lain yang submit, maka sistem akan menampilkan profile user yang mensubmit ke detail my appointment tersebut</td>
+                                <td class="tg-yw4l">Sistem menampilkan Appointment sesuai filter yang ditentukan</td>
                               </tr>
                               <tr>
                                 <td class="tg-yw4l">8</td>
-                                <td class="tg-yw4l">User memilih user mana yang akan dipilih untuk menjadi teman kongkow bagi appointmentnya</td>
+                                <td class="tg-yw4l">User memilih appointment yang ingin dipilih</td>
                                 <td class="tg-yw4l">9</td>
-                                <td class="tg-yw4l">Sistem akan mengirimkan appointment yang sama ke orang yang diterima menjadi teman kongkownya</td>
+                                <td class="tg-yw4l">Sistem menampilkan detail Appointment yan dipilih</td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yw4l">10</td>
+                                <td class="tg-yw4l">User menekan tombol interested</td>
+                                <td class="tg-yw4l">11</td>
+                                <td class="tg-yw4l">Sistem mengirimkan notifikasi kepada pembuat Appointment</td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yw4l">12</td>
+                                <td class="tg-yw4l">Pembuat appointment menerima permintaan bergabung</td>
+                                <td class="tg-yw4l">13</td>
+                                <td class="tg-yw4l">Sistem mengirim notifikasi terhadap user yang tertarik</td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yw4l">14</td>
+                                <td class="tg-yw4l">User dapat saling berkirim pesan</td>
+                                <td class="tg-yw4l"></td>
+                                <td class="tg-yw4l"></td>
+                              </tr>
+
+                        </table>
+
+                        <h3>Skenario Mencari Teman berdasarkan Membuat Appointment</h3>
+                        <h5><strong>Pre-condition : User telah terdaftar dan telah mengisi atribut profile</strong></h5>
+                        <h5><strong>Post-condition : User mendapatkan teman, dan jadwal untuk kongkow</strong></h5>
+                        <table class="table table-bordered table-striped">
+                              <tr>
+                                <th class="tg-amwm">No</th>
+                                <th class="tg-amwm">User</th>
+                                <th class="tg-amwm">No</th>
+                                <th class="tg-amwm">Sistem</th>
+                              </tr>
+                              <tr>
+                                <td class="tg-yw4l">1</td>
+                                <td class="tg-yw4l">User menekan tab pencarian teman</td>
+                                <td class="tg-yw4l">2</td>
+                                <td class="tg-yw4l">Sistem menampilkan List Appointment yang tersedia</td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yw4l">3</td>
+                                <td class="tg-yw4l">User menekan tombol menambah appointment</td>
+                                <td class="tg-yw4l">4</td>
+                                <td class="tg-yw4l">Sistem menampilkan pop up my appointment</td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yw4l">5</td>
+                                <td class="tg-yw4l">User menekan tombol plus untuk membuat Appointment baru</td>
+                                <td class="tg-yw4l">6</td>
+                                <td class="tg-yw4l">Sistem menampilkan isian detail Appointment yang perlu diisi oleh user</td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yw4l">7</td>
+                                <td class="tg-yw4l">User mengisi detail Appointment dan menekan tombol Checklist</td>
+                                <td class="tg-yw4l">8</td>
+                                <td class="tg-yw4l">Sistem menambahkan Appointment kedalam list Appointment yang dibuat user dan mempublikasikan kepada user lain</td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yw4l"></td>
+                                <td class="tg-yw4l"></td>
+                                <td class="tg-yw4l">9</td>
+                                <td class="tg-yw4l">Sistem menampilkan notifikasi pada Appointment yang mendapat Interest</td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yw4l">10</td>
+                                <td class="tg-yw4l">User memilih Appointment yang terdapat notifikasi</td>
+                                <td class="tg-yw4l">11</td>
+                                <td class="tg-yw4l">Sistem menampilkan Detail Appointment dan User yang interested terhadap Appointment Tersebut</td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yw4l">12</td>
+                                <td class="tg-yw4l">User memilih user yang akan diterima untuk Appointment tersebut</td>
+                                <td class="tg-yw4l">13</td>
+                                <td class="tg-yw4l">Sistem menampilkan popup konfirmasi</td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yw4l">14</td>
+                                <td class="tg-yw4l">User memilih pilihan konfirmasi</td>
+                                <td class="tg-yw4l">15</td>
+                                <td class="tg-yw4l">Jika "YES" maka user tersebut dipilih menjadi teman <i>hangout</i> dan menampilkan tombol message, jika "NO" maka kembali ke tampilan detail appointment</td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yw4l">16</td>
+                                <td class="tg-yw4l">User menekan tombol message</td>
+                                <td class="tg-yw4l">13</td>
+                                <td class="tg-yw4l">Sistem menampilkan halaman message dengan teman hangout tersebut</td>
                               </tr>
                             </table>
                             <br>
